@@ -1,74 +1,147 @@
-# 🛒 PERN Stack E-Commerce Platform 🚀
+# 🛒 Northwind Store
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+### 🚀 Modern Commerce Platform with Integrated Customer Support
 
----
+Northwind Store is a full-stack commerce platform built to solve the problem of fragmented post-purchase customer experiences. Traditional e-commerce businesses often rely on separate tools for payments, order management, customer support, file sharing, and live assistance, creating operational overhead and friction for customers.
 
-## ✨ Highlights:
-
-- 🛒 Full Stack E-Commerce App built from scratch
-- ⚛️ Frontend with React, TanStack Query, Tailwind CSS & DaisyUI
-- 🚀 Backend with Express.js & TypeScript
-- 🔐 Secure Authentication with Clerk
-- 🗄️ PostgreSQL Database hosted on Neon
-- 💳 Payments integration with Polar
-- 📦 Product, Cart & Order Management
-- 📊 Admin Dashboard to manage products
-- 💬 Real-time Customer Support Chat with Stream
-- 📹 Video Calling powered by Stream
-- ⌨️ Typing Indicators in chat
-- 😀 Message Reactions
-- 🧵 Threaded Conversations
-- 📁 File Uploads in chat
-- 🎞️ GIF Support inside messages
-- 🔔 Webhooks explained and implemented step-by-step
-- 📤 Image Uploads & Optimization with ImageKit
-- 🚨 Monitoring, Error Tracking & Performance Tracking with Sentry
-- 📋 Structured Logs for debugging and analysis
-- ⚡ Modern SaaS / E-Commerce Architecture
-- 🌐 Deploy your app with a live URL
-- 🆓 100% Free Setup to get started
-- 📂 Full Source Code Provided
-- 🎯 Resume-ready production-style project
+This platform unifies the entire customer journey—from product discovery and checkout to order tracking, real-time support, and video consultations—within a single application. Customers can purchase products, monitor orders, communicate with support teams, share files, and join live support sessions directly from their order portal without switching between multiple platforms.
 
 ---
 
-## 🧪 Environment Variables
+## ✨ Features
 
-### Backend (`/backend`)
+### 🛍️ Customer Experience
 
-```bash
-PORT=<your_port>
-NODE_ENV=<development_or_production>
+* Browse and discover products
+* Product categorization and filtering
+* Product detail pages
+* Shopping cart management
+* Secure checkout experience
+* Order history and tracking
+* Responsive user interface
 
-DATABASE_URL=<your_postgresql_connection_string>
+### 💳 Payments & Orders
 
-CLERK_PUBLISHABLE_KEY=<your_clerk_publishable_key>
-CLERK_SECRET_KEY=<your_clerk_secret_key>
-CLERK_WEBHOOK_SECRET=<your_clerk_webhook_secret>
+* Polar payment integration
+* Webhook-driven order fulfillment
+* Secure checkout sessions
+* Automated order creation
+* Order status management
+* Persistent order history
 
-SENTRY_DSN=<your_sentry_dsn>
+### 💬 Real-Time Customer Support
 
-STREAM_API_KEY=<your_stream_api_key>
-STREAM_API_SECRET=<your_stream_api_secret>
+* Dedicated order-specific support channels
+* Real-time messaging using Stream Chat
+* Typing indicators
+* Message reactions
+* Threaded conversations
+* File sharing
+* GIF support
+* Customer-support communication history
 
-IMAGEKIT_PUBLIC_KEY=<your_imagekit_public_key>
-IMAGEKIT_PRIVATE_KEY=<your_imagekit_private_key>
-IMAGEKIT_URL_ENDPOINT=<your_imagekit_url_endpoint>
+### 📹 Live Video Assistance
 
-FRONTEND_URL=<your_frontend_url>
+* One-click video consultation requests
+* Order-linked support calls
+* Real-time customer assistance
+* Stream Video integration
 
-POLAR_ACCESS_TOKEN=<your_polar_access_token>
-POLAR_WEBHOOK_SECRET=<your_polar_webhook_secret>
-POLAR_API_BASE=<your_polar_api_base_url>
+### 🔐 Authentication & Authorization
 
-POLAR_CHECKOUT_PRODUCT_ID=<your_product_id>
+* Secure authentication with Clerk
+* Role-based access control
+* Customer, Support, and Admin roles
+* Protected routes and APIs
+
+### 🛠️ Admin Dashboard
+
+* Product management
+* Product creation and updates
+* Product activation/deactivation
+* Image management
+* Administrative controls
+
+### 📤 Media Management
+
+* Image uploads via ImageKit
+* Optimized media delivery
+* Secure asset management
+
+### 📊 Monitoring & Reliability
+
+* Error tracking with Sentry
+* Performance monitoring
+* Structured logging
+* Production-ready observability
+
+---
+
+## 🎯 Problem Solved
+
+Many online businesses use separate systems for payments, order management, customer support, and live customer assistance. This fragmented workflow forces customers and support teams to switch between multiple tools, leading to slower issue resolution and a poor post-purchase experience.
+
+Northwind Store addresses this challenge by providing a unified commerce and customer-support platform where purchasing, order tracking, real-time communication, and live assistance coexist within a single workflow, improving customer satisfaction while reducing operational complexity.
+
+---
+
+## 🏗️ Architecture
+
+```text
+Customer
+   │
+   ▼
+React Frontend
+   │
+   ▼
+Express + TypeScript API
+   │
+   ├── PostgreSQL (Drizzle ORM)
+   ├── Clerk Authentication
+   ├── Polar Payments
+   ├── Stream Chat & Video
+   ├── ImageKit
+   └── Sentry Monitoring
 ```
 
-### Frontend (`/frontend`)
+---
 
-```bash
-VITE_CLERK_PUBLISHABLE_KEY=<your_clerk_publishable_key>
-VITE_SENTRY_DSN=<your_sentry_dsn>
-VITE_API_URL=<your_backend_api_url>
-```
+## 🛠️ Tech Stack
+
+### Frontend
+
+* ⚛️ React
+* ⚡ Vite
+* 🎨 Tailwind CSS
+* 🌼 DaisyUI
+* 🔄 TanStack Query
+* 🗂️ Zustand
+* 🔐 Clerk
+
+### Backend
+
+* 🟢 Node.js
+* 🚂 Express.js
+* 📘 TypeScript
+* 🗄️ PostgreSQL
+* 🧩 Drizzle ORM
+* ✅ Zod Validation
+
+### Integrations
+
+* 💳 Polar Payments
+* 💬 Stream Chat
+* 📹 Stream Video
+* 📤 ImageKit
+* 🚨 Sentry
+
+### Deployment
+
+* 🐳 Docker
+* ☁️ Cloud-ready Architecture
+
+---
+
+## 🚀 Key Impact
+
+Northwind Store transforms a traditional online store into a customer engagement platform by integrating commerce, support, and live assistance into a single ecosystem. The result is a seamless post-purchase experience that improves support responsiveness, reduces customer friction, and enables businesses to manage customer interactions from one centralized platform.
