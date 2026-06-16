@@ -1,4 +1,4 @@
-# 🛒 Northwind Store
+# 🛒 Kirana
 
 ### 🚀 Modern Commerce Platform with Integrated Customer Support
 
